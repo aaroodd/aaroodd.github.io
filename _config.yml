@@ -13,8 +13,10 @@ github_username:  aaroodd
 #gplus_username:  
 #twitter_username: 
 
-# Google Analytics
-google_analytics: UA-216277363-1
 
+
+# Google-analytics
+google-analytics:
+  id: UA-216277363-1
 
 exclude: ['package.json', 'src' , 'node_modules']
