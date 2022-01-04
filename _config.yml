@@ -1,7 +1,7 @@
 # Site settings
 title: Aaroodd UR
-description: beep boop where do you see this?
-# baseurl: "" # the subpath of your site, e.g. /blog
+description:
+baseurl: "" # the subpath of your site, e.g. /blog
 # url: "localhost:4000" # the base hostname & protocol for your site e.g. http://willianjusten.com.br
 
 # User settings
