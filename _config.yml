@@ -2,13 +2,13 @@
 title: Aaroodd U R
 description: Hello there!
 baseurl: "" # the subpath of your site, e.g. /blog
-# url: "localhost:4000" # the base hostname & protocol for your site e.g. http://willianjusten.com.br
+# url: "localhost:4000" # the base hostname & protocol for your site 
 
 # User settings
 username: Aaroodd
 user_description: 
 user_title: 
-email: aaroodd@gmail.com
+#email: aaroodd@gmail.com
 github_username:  aaroodd
 #gplus_username:  
 #twitter_username: 
