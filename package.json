@@ -9,7 +9,7 @@
   "author": "Nathan Randecker",
   "license": "ISC",
   "dependencies": {
-    "browser-sync": "^2.26.3",
+    "browser-sync": "^3.0.2",
     "gulp": "^4.0.0",
     "gulp-concat": "^2.6.1",
     "gulp-csso": "^4.0.1",
