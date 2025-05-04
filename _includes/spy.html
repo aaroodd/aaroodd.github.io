@@ -1,20 +1,25 @@
 <div class="user-projects">
     <div class="contents-full">
       <!-- TradingView Widget BEGIN -->
-      <div class="tradingview-widget-container" style="height: 400px;">
-        <div class="tradingview-widget-container__widget"></div>
-        <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-mini-symbol-overview.js" async>
-        {
-          "symbol": "CME_MINI:ES1!",
-          "width": "100%",
-          "height": "400",
-          "locale": "en",
-          "colorTheme": "dark",
-          "trendLineColor": "#37a6ef",
-          "underLineColor": "rgba(55, 166, 239, 0.15)",
-          "isTransparent": false,
-          "autosize": true
-        }
+      <div class="tradingview-widget-container" style="height:500px;">
+        <div id="tradingview_c1f1d"></div>
+        <script type="text/javascript" src="https://s3.tradingview.com/tv.js"></script>
+        <script type="text/javascript">
+          new TradingView.widget({
+            "width": "100%",
+            "height": 500,
+            "symbol": "CME_MINI:ES1!",
+            "interval": "60",
+            "timezone": "Etc/UTC",
+            "theme": "dark",
+            "style": "1",
+            "locale": "en",
+            "toolbar_bg": "#f1f3f6",
+            "enable_publishing": false,
+            "hide_side_toolbar": false,
+            "allow_symbol_change": true,
+            "container_id": "tradingview_c1f1d"
+          });
         </script>
       </div>
       <!-- TradingView Widget END -->
