@@ -17,7 +17,7 @@ profile:
 announcements:
   enabled: true
   scrollable: true
-  limit: 10
+  limit: 3
 latest_posts:
   enabled: false
   scrollable: true
