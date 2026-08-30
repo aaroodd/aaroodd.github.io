@@ -5,8 +5,6 @@
       value: Aaroodd Ujjayini Ramachandran
     - name: Email
       value: aaroodd@wustl.edu
-    - name: Languages
-      value: English, Hindi, Tamil
 
 - title: Education
   type: time_table
