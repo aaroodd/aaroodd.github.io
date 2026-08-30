@@ -34,3 +34,4 @@ Pushes to `main` trigger a GitHub Actions workflow that builds the site and depl
 
 - [al-folio](https://github.com/alshedivat/al-folio) theme by Maruan Al-Shedivat
 - Originally based on [Particle](https://github.com/nrandecker/particle) by Nathan Randecker
+- Built with [Claude](https://claude.ai)
