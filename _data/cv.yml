@@ -1,0 +1,67 @@
+- title: General Information
+  type: map
+  contents:
+    - name: Full Name
+      value: Aaroodd Ujjayini Ramachandran
+    - name: Email
+      value: aaroodd@wustl.edu
+    - name: Languages
+      value: English, Hindi, Tamil
+
+- title: Education
+  type: time_table
+  contents:
+    - title: Ph.D. in Physics
+      institution: Washington University in St. Louis
+      year: 2023 - present
+      description:
+        - "Advisor: P. S. Bhupal Dev"
+        - Astroparticle physics and cosmology
+        - "Focus: sterile neutrino dark matter, BSM phenomenology"
+    - title: M.Sc. in Physics
+      institution: # Fill in your master's institution
+      year: # Fill in years
+      description:
+        - "Thesis: Sterile neutrino dark matter production in presence of nonstandard neutrino self-interactions"
+    - title: B.Sc. in Physics
+      institution: # Fill in your undergrad institution
+      year: # Fill in years
+
+- title: Experience
+  type: time_table
+  contents:
+    - title: Graduate Research Assistant
+      institution: Washington University in St. Louis
+      year: 2023 - present
+      description:
+        - Sterile neutrino dark matter phenomenology
+        - Numerical computation and statistical analysis in Python
+        - Published in Physical Review D
+    - title: # Add other positions
+      institution:
+      year:
+
+- title: Skills
+  type: nested_list
+  contents:
+    - title: Physics & Mathematics
+      items:
+        - Quantum field theory, particle physics phenomenology
+        - Statistical mechanics, cosmology
+        - Bayesian inference, Monte Carlo methods
+    - title: Programming & Data
+      items:
+        - "Python (NumPy, SciPy, Matplotlib, Pandas)"
+        - C/C++, Mathematica
+        - Data analysis, signal processing
+    - title: Tools & Frameworks
+      items:
+        - Git, LaTeX, Linux
+        - Jupyter, ROOT
+        - High-performance computing (HPC)
+
+- title: Publications
+  type: list
+  contents:
+    - "<b>Opening up new parameter space for sterile neutrino dark matter</b>, P.S.B. Dev, B. Dutta, S. Goswami, J.P. Tang, <u>A.U. Ramachandran</u>, Phys. Rev. D 114, L011703 (2026)"
+    - "<b>Sterile neutrino dark matter production in presence of nonstandard neutrino self-interactions</b>, C. Benso, W. Rodejohann, M. Sen, <u>A.U. Ramachandran</u>, Phys. Rev. D 105, 055016 (2022)"
