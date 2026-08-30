@@ -1,6 +1,6 @@
 # aaroodd.github.io
 
-Personal website of Aaroodd Ujjayini Ramachandran — physics PhD student at [Washington University in St. Louis](https://wustl.edu).
+Personal website of Aaroodd — physics PhD student at [Washington University in St. Louis](https://wustl.edu).
 
 **Live site:** [aaroodd.github.io](https://aaroodd.github.io)
 
