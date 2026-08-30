@@ -1,7 +1,7 @@
 ---
 layout: page
-title: markets
-permalink: /markets/
+title: the tape
+permalink: /tape/
 description: Live charts and market data.
 nav: true
 nav_order: 5
