@@ -51,7 +51,7 @@
       items:
         - "Python (NumPy, SciPy, Matplotlib, Pandas)"
         - C/C++, Mathematica
-        - Data analysis, signal processing
+        - Data analysis
     - title: Tools & Frameworks
       items:
         - Git, LaTeX, Linux
