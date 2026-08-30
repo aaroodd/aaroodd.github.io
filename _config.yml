@@ -1,22 +1,418 @@
+# -----------------------------------------------------------------------------
 # Site settings
-title: Aaroodd U R
-description: Hello there!
-baseurl: "" # the subpath of your site, e.g. /blog
-# url: "localhost:4000" # the base hostname & protocol for your site 
+# -----------------------------------------------------------------------------
 
-# User settings
-username: Aaroodd
-user_description: 
-user_title: 
-#email: aaroodd@gmail.com
-github_username:  aaroodd
-#gplus_username:  
-#twitter_username: 
+title: blank # leave blank for first_name last_name
+first_name: Aaroodd
+middle_name:
+last_name: Ujjayini Ramachandran
+email: aaroodd@wustl.edu
+description: >
+  Physicist, data enthusiast, and occasional market watcher.
+  PhD student at Washington University in St. Louis working on neutrinos, dark matter, and the early Universe.
+footer_text: >
+  Powered by <a href="https://jekyllrb.com/" target="_blank">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio" target="_blank">al-folio</a> theme.
+keywords: physics, neutrinos, dark matter, cosmology, data science, quantitative research
 
+url: https://aaroodd.github.io
+baseurl:
+last_updated: true
+impressum_url:
+lang: en
 
+# -----------------------------------------------------------------------------
+# Theme
+# -----------------------------------------------------------------------------
 
-# Google-analytics
-#google-analytics:
-#  id: 
+# Repo info — used by al-folio for "Improve this page" links
+repo_theme_light: default
+repo_theme_dark: dark
 
-exclude: ['package.json', 'src' , 'node_modules']
+# -----------------------------------------------------------------------------
+# Layout
+# -----------------------------------------------------------------------------
+
+navbar_fixed: true
+footer_fixed: false
+
+search_enabled: true
+search_blog_posts: true
+
+max_width: 960px
+
+# -----------------------------------------------------------------------------
+# Open Graph & Schema.org
+# -----------------------------------------------------------------------------
+
+serve_og_image: true
+og_image:
+
+# -----------------------------------------------------------------------------
+# Social integration
+# -----------------------------------------------------------------------------
+
+github_username: aaroodd
+inspire_id: 2952914
+scholar_userid:
+orcid_id:
+linkedin_username:
+
+contact_note: >
+  Feel free to reach out by email or find me on GitHub.
+
+# -----------------------------------------------------------------------------
+# Analytics and search engines
+# -----------------------------------------------------------------------------
+
+# google_analytics:
+# cronitor_analytics:
+# google_site_verification:
+# bing_site_verification:
+
+# -----------------------------------------------------------------------------
+# Blog
+# -----------------------------------------------------------------------------
+
+blog_name: blog
+blog_nav_title: blog
+blog_description:
+permalink: /blog/:year/:title/
+
+pagination:
+  enabled: true
+
+related_blog_posts:
+  enabled: true
+  max_related: 5
+
+# Displays the last updated date for blog posts
+last_updated: true
+
+# -----------------------------------------------------------------------------
+# Collections
+# -----------------------------------------------------------------------------
+
+collections:
+  news:
+    defaults:
+      values:
+        layout: post
+    output: true
+  projects:
+    output: true
+
+announcements:
+  enabled: true
+  scrollable: true
+  limit: 5
+  cache_duration: 86400
+
+latest_posts:
+  enabled: true
+  scrollable: true
+  limit: 3
+
+# -----------------------------------------------------------------------------
+# Jekyll settings
+# -----------------------------------------------------------------------------
+
+markdown: kramdown
+highlighter: rouge
+
+kramdown:
+  input: GFM
+  math_engine: mathjax
+  syntax_highlighter: rouge
+  syntax_highlighter_opts:
+    block:
+      line_numbers: false
+
+# Includes & Coverage
+include: ["_pages"]
+exclude:
+  - bin/
+  - CONTRIBUTING.md
+  - CUSTOMIZE.md
+  - Dockerfile
+  - docker-compose.yml
+  - docker-compose-slim.yml
+  - FAQ.md
+  - Gemfile
+  - Gemfile.lock
+  - INSTALL.md
+  - LICENSE
+  - LICENSE.txt
+  - package.json
+  - package-lock.json
+  - yarn.lock
+  - node_modules/
+  - vendor/
+  - README.md
+  - gulpfile.js
+  - src/
+  - particle.jpg
+
+sass:
+  style: compressed
+
+plugins:
+  - jekyll-3rd-party-libraries
+  - jekyll-archives-v2
+  - jekyll-cache-bust
+  - jekyll-email-protect
+  - jekyll-feed
+  - jekyll-get-json
+  - jekyll-imagemagick
+  - jekyll-link-attributes
+  - jekyll-minifier
+  - jekyll-paginate-v2
+  - jekyll-regex-replace
+  - jekyll/scholar
+  - jekyll-sitemap
+  - jekyll-socials
+  - jekyll-tabs
+  - jekyll-toc
+  - jemoji
+
+# -----------------------------------------------------------------------------
+# Jekyll Scholar
+# -----------------------------------------------------------------------------
+
+scholar:
+  last_name: [Ramachandran]
+  first_name: [Aaroodd, A.]
+
+  style: apa
+  locale: en
+
+  source: /_bibliography/
+  bibliography: papers.bib
+  bibliography_template: bib
+
+  replace_strings: true
+  join_strings: true
+
+  details_dir: bibliography
+  details_layout: bibtex.html
+  details_link: Details
+
+  query: "@*"
+  group_by: year
+  group_order: descending
+
+# -----------------------------------------------------------------------------
+# Responsive images (optional)
+# -----------------------------------------------------------------------------
+
+imagemagick:
+  enabled: false
+
+# -----------------------------------------------------------------------------
+# Jekyll Sitemap
+# -----------------------------------------------------------------------------
+
+defaults:
+  - scope:
+      path: "assets"
+    values:
+      sitemap: false
+
+# -----------------------------------------------------------------------------
+# Optional Features
+# -----------------------------------------------------------------------------
+
+enable_google_analytics: false
+enable_cronitor_analytics: false
+enable_google_verification: false
+enable_bing_verification: false
+enable_masonry: true
+enable_math: true
+enable_tooltips: false
+enable_darkmode: true
+enable_navbar_social: false
+enable_project_categories: true
+enable_medium_zoom: true
+enable_progressbar: true
+enable_video_embedding: false
+
+show_social_icons: true
+
+enable_publication_badges:
+  altmetric: false
+  dimensions: false
+  google_scholar: false
+  inspirehep: true
+
+# -----------------------------------------------------------------------------
+# Third Party Libraries
+# -----------------------------------------------------------------------------
+
+third_party_libraries:
+  download: false
+  bootstrap-table:
+    integrity:
+      css: "sha256-uRX+PiRTR4ysKFRCykT8HLuRCub26LgXJZym3Yeom1c="
+      js: "sha256-4rppopQE9POKfukn2kEvhJ9Um25Cf6+IDVkARD0xh78="
+    url:
+      css: "https://cdn.jsdelivr.net/npm/bootstrap-table@{{version}}/dist/bootstrap-table.min.css"
+      js: "https://cdn.jsdelivr.net/npm/bootstrap-table@{{version}}/dist/bootstrap-table.min.js"
+    version: "1.22.4"
+  chartjs:
+    integrity:
+      js: "sha256-0q+JdOlScWOHcunpUk21uab1jW7C1deBQARHtKMcaB4="
+    url:
+      js: "https://cdn.jsdelivr.net/npm/chart.js@{{version}}/dist/chart.umd.min.js"
+    version: "4.4.1"
+  d3:
+    integrity:
+      js: "sha256-1rA678n2xEx7x4cTZ5x4wpUCj6kUMZEZ5cxLSVSFWxw="
+    url:
+      js: "https://cdn.jsdelivr.net/npm/d3@{{version}}/dist/d3.min.js"
+    version: "7.8.5"
+  diff2html:
+    integrity:
+      css: "sha256-IMBK4VNZp0ivwefSn51bswdsrhk0HoMTLc2GqFHFBXg="
+      js: "sha256-eU2TVHX633T1o/bTQp6iIJByYJEtZThhF9bKz/DcbbY="
+    url:
+      css: "https://cdn.jsdelivr.net/npm/diff2html@{{version}}/bundles/css/diff2html.min.css"
+      js: "https://cdn.jsdelivr.net/npm/diff2html@{{version}}/bundles/js/diff2html-ui.min.js"
+    version: "3.4.47"
+  echarts:
+    integrity:
+      js:
+        library: "sha256-QvgynZibb2U53SsVu98NggJXYqwRL7tg3FeyfXvPOUY="
+        dark_theme: "sha256-sm6Ui9w41++ZCWmIWDLC18a6ki72FQpWDiYTDxEPXwU="
+    url:
+      js:
+        library: "https://cdn.jsdelivr.net/npm/echarts@{{version}}/dist/echarts.min.js"
+        dark_theme: "https://cdn.jsdelivr.net/npm/echarts@{{version}}/theme/dark-fresh-cut.js"
+    version: "5.5.0"
+  google_fonts:
+    url:
+      fonts: "https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700&family=Source+Serif+4:ital,wght@0,400;0,600;0,700;1,400&family=Material+Icons&display=swap"
+  highlightjs:
+    integrity:
+      css:
+        light: "sha256-Oppd74ucMR5a5Dq96FxjEzGF7tTw2fZ/6ksAqDCM8GY="
+        dark: "sha256-nyCNAiECsdDHrr/s2OQsp5l9XeY2ZJ0rMepjCT2AkBk="
+    url:
+      css:
+        light: "https://cdn.jsdelivr.net/npm/highlight.js@{{version}}/styles/github.min.css"
+        dark: "https://cdn.jsdelivr.net/npm/highlight.js@{{version}}/styles/github-dark.min.css"
+    version: "11.9.0"
+  imagesloaded:
+    integrity:
+      js: "sha256-htrLFfZJ6v5udOG+3kNLINIKh2gvoKqwEhHYfTTMICc="
+    url:
+      js: https://cdn.jsdelivr.net/npm/imagesloaded@{{version}}/imagesloaded.pkgd.min.js
+    version: "5.0.0"
+  img-comparison-slider:
+    integrity:
+      css: "sha256-3qTIuuUWIFnnU3LpQMjqiXc0p09rvd0dmj+WkpQXSR8="
+      js: "sha256-EXHg3x1K4oIWdyohPeKX2ZS++Wxt/FRPH7Nl01nat1o="
+      map: "sha256-3wfqS2WU5kGA/ePcgFzJXl5oSN1QsgZI4/edprTgX8w="
+    url:
+      css: "https://cdn.jsdelivr.net/npm/img-comparison-slider@{{version}}/dist/styles.min.css"
+      js: "https://cdn.jsdelivr.net/npm/img-comparison-slider@{{version}}/dist/index.min.js"
+      map: "https://cdn.jsdelivr.net/npm/img-comparison-slider@{{version}}/dist/index.js.map"
+    version: "8.0.6"
+  jquery:
+    integrity:
+      js: "sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+    url:
+      js: "https://cdn.jsdelivr.net/npm/jquery@{{version}}/dist/jquery.min.js"
+    version: "3.6.0"
+  leaflet:
+    integrity:
+      css: "sha256-q9ba7o845pMPFU+zcAll8rv+gC+fSovKsOoNQ6cynuQ="
+      js: "sha256-MgH13bFTTNqsnuEoqNPBLDaqxjGH+lCpqrukmXc8Ppg="
+      js_map: "sha256-YAoQ3FzREN4GmVENMir8vgHHypC0xfSK3CAxTHCqx1M="
+    local:
+      images: "images/"
+    url:
+      css: "https://cdn.jsdelivr.net/npm/leaflet@{{version}}/dist/leaflet.min.css"
+      images: "https://cdn.jsdelivr.net/npm/leaflet@{{version}}/dist/images/"
+      js: "https://cdn.jsdelivr.net/npm/leaflet@{{version}}/dist/leaflet.min.js"
+      js_map: "https://cdn.jsdelivr.net/npm/leaflet@{{version}}/dist/leaflet.js.map"
+    version: "1.9.4"
+  lightbox2:
+    integrity:
+      css: "sha256-uypRbsAiJcFInM/ndyI/JHpzNe6DtUNXaWEUWEPfMGo="
+      js: "sha256-A6jI5V9s1JznkWwsBaRK8kSeXLgIqQfxfnvdDOZEURY="
+    url:
+      css: "https://cdn.jsdelivr.net/npm/lightbox2@{{version}}/dist/css/lightbox.min.css"
+      js: "https://cdn.jsdelivr.net/npm/lightbox2@{{version}}/dist/js/lightbox.min.js"
+    version: "2.11.5"
+  mathjax:
+    integrity:
+      js: "sha256-MASABpB4tYktI2Oitl4t+78w/lyA+D7b/s9GEP0JOGI="
+    local:
+      fonts: "output/chtml/fonts/woff-v2/"
+    url:
+      fonts: "https://cdn.jsdelivr.net/npm/mathjax@{{version}}/es5/output/chtml/fonts/woff-v2/"
+      js: "https://cdn.jsdelivr.net/npm/mathjax@{{version}}/es5/tex-mml-chtml.js"
+    version: "3.2.2"
+  masonry:
+    integrity:
+      js: "sha256-Nn1q/fx0H7SNLZMQ5Hw5JLaTRZp0yILA/FRexe19VdI="
+    url:
+      js: "https://cdn.jsdelivr.net/npm/masonry-layout@{{version}}/dist/masonry.pkgd.min.js"
+    version: "4.2.2"
+  mdb:
+    integrity:
+      css: "sha256-jpjYvU3G3N6nrrBwXJoVEYI/0zw8htfFnhT9ljN3JJw="
+      css_map: "sha256-iYYMNfsJdVZjvsebJulg09miBXM4/GMTJgv1u5EZFFM="
+      js: "sha256-NdbiivsvWt7VYCt6hYNT3h/th9vSTL4EDWeGs5SN3DA="
+      js_map: "sha256-UPgyn4YNsT0khkBK5553QwhnlbTlU0aa+igyc6qP1bE="
+    url:
+      css: "https://cdn.jsdelivr.net/npm/mdbootstrap@{{version}}/css/mdb.min.css"
+      css_map: "https://cdn.jsdelivr.net/npm/mdbootstrap@{{version}}/css/mdb.min.css.map"
+      js: "https://cdn.jsdelivr.net/npm/mdbootstrap@{{version}}/js/mdb.min.js"
+      js_map: "https://cdn.jsdelivr.net/npm/mdbootstrap@{{version}}/js/mdb.min.js.map"
+    version: "4.20.0"
+  medium_zoom:
+    integrity:
+      js: "sha256-ZgMyDAIYDYGxbcpJcfUnYwNevG/xi9OHKaR/8GK+jWc="
+    url:
+      js: "https://cdn.jsdelivr.net/npm/medium-zoom@{{version}}/dist/medium-zoom.min.js"
+    version: "1.1.0"
+  mermaid:
+    integrity:
+      js: "sha256-TtLOdUA8mstPoO6sGvHIGx2ceXrrX4KgIItO06XOn8A="
+    url:
+      js: "https://cdn.jsdelivr.net/npm/mermaid@{{version}}/dist/mermaid.min.js"
+    version: "10.7.0"
+  plotly:
+    integrity:
+      js: "sha256-oy6Be7Eh6eiQFs5M7oXuPxxm9qbJXEtTpfSI93dW16Q="
+    url:
+      js: "https://cdn.jsdelivr.net/npm/plotly.js@{{version}}/dist/plotly.min.js"
+    version: "3.0.1"
+  polyfill:
+    url:
+      js: "https://cdnjs.cloudflare.com/polyfill/v{{version}}/polyfill.min.js?features=es6"
+    version: "3"
+  pseudocode:
+    integrity:
+      css: "sha256-VwMV//xgBPDyRFVSOshhRhzJRDyBmIACniLPpeXNUdc="
+      js: "sha256-aVkDxqyzrB+ExUsOY9PdyelkDhn/DfrjWu08aVpqNlo="
+    url:
+      css: "https://cdn.jsdelivr.net/npm/pseudocode@{{version}}/build/pseudocode.min.css"
+      js: "https://cdn.jsdelivr.net/npm/pseudocode@{{version}}/build/pseudocode.min.js"
+    version: "2.4.1"
+  venobox:
+    integrity:
+      css: "sha256-ohJEB0/WsBOdBD+gQO/MGfyJSbTUI8OOLbQGdkxD6Cg="
+      js: "sha256-LsGXHsHMMmTcz3KqTaWvLv6ome+7pRiic2LPnzTfiSo="
+    url:
+      css: "https://cdn.jsdelivr.net/npm/venobox@{{version}}/dist/venobox.min.css"
+      js: "https://cdn.jsdelivr.net/npm/venobox@{{version}}/dist/venobox.min.js"
+    version: "2.1.8"
+
+# -----------------------------------------------------------------------------
+# Get external JSON data
+# -----------------------------------------------------------------------------
+
+jekyll_get_json:
+  - data: resume
+    json: assets/json/resume.json

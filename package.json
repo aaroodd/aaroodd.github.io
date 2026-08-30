@@ -1,21 +1,8 @@
 {
-  "name": "particle",
+  "name": "aaroodd-github-io",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "dev": "gulp"
-  },
-  "author": "Nathan Randecker",
-  "license": "ISC",
-  "dependencies": {
-    "browser-sync": "^3.0.2",
-    "gulp": "^4.0.0",
-    "gulp-concat": "^2.6.1",
-    "gulp-csso": "^4.0.1",
-    "gulp-imagemin": "^9.1.0",
-    "gulp-plumber": "^1.2.1",
-    "gulp-sass": "^5.1.0",
-    "gulp-uglify": "^3.0.1"
+  "private": true,
+  "devDependencies": {
+    "prettier": "^3.8.0"
   }
 }
