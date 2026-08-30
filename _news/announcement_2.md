@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-Started PhD in Physics at **Washington University in St. Louis**, joining the group of [Prof. Bhupal Dev](https://inspirehep.net/authors/1030489).
+Started PhD in Physics at **Washington University in St. Louis**, joining the group of [Prof. Bhupal Dev](https://inspirehep.net/authors/1052537).
