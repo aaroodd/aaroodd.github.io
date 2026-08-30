@@ -55,8 +55,7 @@
     - title: Tools & Frameworks
       items:
         - Git, LaTeX, Linux
-        - Jupyter, ROOT
-        - High-performance computing (HPC)
+        - Jupyter
 
 - title: Awards & Honors
   type: time_table
