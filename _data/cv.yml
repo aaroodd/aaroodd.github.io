@@ -10,20 +10,20 @@
   type: time_table
   contents:
     - title: Ph.D. in Physics
-      institution: Washington University in St. Louis
-      year: 2023 - present
+      institution: Washington University in St. Louis, St. Louis, MO
+      year: 2023 - 2028 (expected)
       description:
         - "Advisor: P. S. Bhupal Dev"
         - Astroparticle physics and cosmology
         - "Focus: sterile neutrino dark matter, BSM phenomenology"
-    - title: M.Sc. in Physics
-      institution: # Fill in your master's institution
-      year: # Fill in years
+    - title: M.S. in Physics (Astroparticle Physics & Cosmology)
+      institution: RWTH Aachen University, Aachen, Germany
+      year: 2019 - 2021
       description:
         - "Thesis: Sterile neutrino dark matter production in presence of nonstandard neutrino self-interactions"
-    - title: B.Sc. in Physics
-      institution: # Fill in your undergrad institution
-      year: # Fill in years
+    - title: B.Tech in Engineering Physics
+      institution: National Institute of Technology Calicut, Calicut, India
+      year: 2015 - 2019
 
 - title: Experience
   type: time_table
@@ -57,6 +57,17 @@
         - Git, LaTeX, Linux
         - Jupyter, ROOT
         - High-performance computing (HPC)
+
+- title: Awards & Honors
+  type: time_table
+  contents:
+    - title: DAAD Research Grant
+      year: 2026 - 2027
+    - title: Arthur L. Hughes Fellowship
+      institution: Washington University in St. Louis
+      year: 2023 - 2024
+    - title: JN Tata Endowment
+      year: 2019 - 2021
 
 - title: Publications
   type: list
