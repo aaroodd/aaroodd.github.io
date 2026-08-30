@@ -1,16 +1,36 @@
-# Particle Jekyll Theme
+# aaroodd.github.io
 
+Personal website of Aaroodd Ujjayini Ramachandran — physics PhD student at [Washington University in St. Louis](https://wustl.edu).
 
+**Live site:** [aaroodd.github.io](https://aaroodd.github.io)
 
-This is a simple and minimalist template for Jekyll designed based on [particle](https://github.com/nrandecker/particle) by [Nathan Randecker](https://github.com/nrandecker)
+## About
 
+Built with [Jekyll](https://jekyllrb.com/) using the [al-folio](https://github.com/alshedivat/al-folio) theme (v0.16.3). Features include:
 
-## License
+- Inline CV rendered from YAML
+- BibTeX-driven publications with INSPIRE-HEP badges
+- Categorized project cards (research & technical)
+- Live market data via TradingView widgets
+- Blog with MathJax support
+- Dark/light mode, search, responsive design
 
-This theme is free and open source software, distributed under the The MIT License. So feel free to use this Jekyll theme anyway you want.
+## Local development
+
+Requires Ruby and Bundler:
+
+```bash
+bundle install
+bundle exec jekyll serve
+```
+
+Then open [localhost:4000](http://localhost:4000).
+
+## Deployment
+
+Pushes to `main` trigger a GitHub Actions workflow that builds the site and deploys to the `gh-pages` branch. GitHub Pages serves from `gh-pages`.
 
 ## Credits
 
-- [Nathan Randecker](https://github.com/nrandecker/particle)
-- [Willian Justen](https://github.com/willianjusten/will-jekyll-template)
-- [Vincent Garreau](https://github.com/VincentGarreau/particles.js/)
+- [al-folio](https://github.com/alshedivat/al-folio) theme by Maruan Al-Shedivat
+- Originally based on [Particle](https://github.com/nrandecker/particle) by Nathan Randecker
